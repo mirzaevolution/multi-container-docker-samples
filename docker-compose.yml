@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  aescryptoapi:
+    image: ${DOCKER_REGISTRY-}aescryptoapi
+    build:
+      context: .
+      dockerfile: AESCryptoApi/Dockerfile
+
+
+  aescryptoweb:
+    image: ${DOCKER_REGISTRY-}aescryptoweb
+    build:
+      context: .
+      dockerfile: AESCryptoWeb/Dockerfile
+
