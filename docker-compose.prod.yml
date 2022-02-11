@@ -2,14 +2,14 @@ version: '3.4'
 
 services:
   aescryptoapi:
-    image: ${DOCKER_REGISTRY-}aescryptoapi
+    image: mirzaghulamrasyid.azurecr.io/aescryptoapi:latest
     build:
       context: .
       dockerfile: AESCryptoApi/Dockerfile
 
 
   aescryptoweb:
-    image: ${DOCKER_REGISTRY-}aescryptoweb
+    image: mirzaghulamrasyid.azurecr.io/aescryptoweb:latest
     build:
       context: .
       dockerfile: AESCryptoWeb/Dockerfile
