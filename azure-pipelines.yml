@@ -35,7 +35,7 @@ stages:
         repository: '$(imageRepository)'
         command: 'buildAndPush'
         Dockerfile: '**/Profile.Api/Dockerfile'
-        buildContext: '../'
+        buildContext: '**/..'
         tags: |
           $(tag)
           latest
