@@ -2,14 +2,39 @@
   "profiles": {
     "Docker Compose": {
       "commandName": "DockerCompose",
-      "composeLaunchAction": "LaunchBrowser",
       "composeLaunchServiceName": "aescryptoapi",
-      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/swagger",
-      "commandVersion": "1.0",
       "serviceActions": {
         "aescryptoapi": "StartDebugging",
-        "aescryptoweb": "StartDebugging"
-      }
+        "aescryptoweb": "StartDebugging",
+        "profile.api": "StartDebugging",
+        "profile.api.mysql": "StartWithoutDebugging"
+      },
+      "composeLaunchAction": "LaunchBrowser",
+      "commandVersion": "1.0",
+      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/swagger"
+    },
+    "profile.api.mysql": {
+      "commandName": "DockerCompose",
+      "serviceActions": {
+        "aescryptoapi": "DoNotStart",
+        "aescryptoweb": "DoNotStart",
+        "profile.api": "DoNotStart",
+        "profile.api.mysql": "StartWithoutDebugging"
+      },
+      "commandVersion": "1.0"
+    },
+    "profile.api": {
+      "commandName": "DockerCompose",
+      "composeLaunchServiceName": "profile.api",
+      "serviceActions": {
+        "aescryptoapi": "DoNotStart",
+        "aescryptoweb": "DoNotStart",
+        "profile.api": "StartDebugging",
+        "profile.api.mysql": "StartWithoutDebugging"
+      },
+      "composeLaunchAction": "LaunchBrowser",
+      "commandVersion": "1.0",
+      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/swagger"
     }
   }
 }

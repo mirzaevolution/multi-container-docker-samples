@@ -6,7 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>2f62e21d-a300-4725-ab15-6fc77d7886ed</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerComposeProjectPath>..\AesCryptoApiDockerCompose.dcproj</DockerComposeProjectPath>
+    <DockerComposeProjectPath>..\DockerComposeEntryPoint.dcproj</DockerComposeProjectPath>
+    <LangVersion>preview</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>

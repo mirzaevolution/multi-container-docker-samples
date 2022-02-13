@@ -1,19 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32112.339
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Basic Api", "1. Basic Api", "{73B95D10-5D8A-4757-B32D-2652AD2F7A6D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Basic Api (Not Applicable on Azure App Services)", "1. Basic Api (Not Applicable on Azure App Services)", "{73B95D10-5D8A-4757-B32D-2652AD2F7A6D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AESCryptoApi", "AESCryptoApi\AESCryptoApi.csproj", "{EBA2A0F9-B08D-4FCB-8298-51A58FE72781}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AESCryptoApi.Libs", "AESCryptoApi.Libs\AESCryptoApi.Libs.csproj", "{C5829118-CD35-4E7D-9B8E-8816DD8E0798}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "AesCryptoApiDockerCompose", "AesCryptoApiDockerCompose.dcproj", "{EA169B79-25C8-4ADD-85C0-12E776987BA9}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "DockerComposeEntryPoint", "DockerComposeEntryPoint.dcproj", "{EA169B79-25C8-4ADD-85C0-12E776987BA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AESCryptoApi.Models", "AESCryptoApi.Models\AESCryptoApi.Models.csproj", "{49385145-3D73-4C0C-9AC8-C58B235B2511}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AESCryptoApi.Models", "AESCryptoApi.Models\AESCryptoApi.Models.csproj", "{49385145-3D73-4C0C-9AC8-C58B235B2511}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AESCryptoWeb", "AESCryptoWeb\AESCryptoWeb.csproj", "{D855948E-5A17-4EA0-8FA4-B2ADAF368FEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AESCryptoWeb", "AESCryptoWeb\AESCryptoWeb.csproj", "{D855948E-5A17-4EA0-8FA4-B2ADAF368FEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Api with MySQL Data", "2. Api with MySQL Data", "{014DA8DA-6B03-430F-AD21-CC479F6EC163}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profile.Api", "Profile.Api\Profile.Api.csproj", "{0364E990-93F9-45A3-88B1-B22826AE1AFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,10 @@ Global
 		{D855948E-5A17-4EA0-8FA4-B2ADAF368FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D855948E-5A17-4EA0-8FA4-B2ADAF368FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D855948E-5A17-4EA0-8FA4-B2ADAF368FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0364E990-93F9-45A3-88B1-B22826AE1AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0364E990-93F9-45A3-88B1-B22826AE1AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0364E990-93F9-45A3-88B1-B22826AE1AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0364E990-93F9-45A3-88B1-B22826AE1AFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{C5829118-CD35-4E7D-9B8E-8816DD8E0798} = {73B95D10-5D8A-4757-B32D-2652AD2F7A6D}
 		{49385145-3D73-4C0C-9AC8-C58B235B2511} = {73B95D10-5D8A-4757-B32D-2652AD2F7A6D}
 		{D855948E-5A17-4EA0-8FA4-B2ADAF368FEB} = {73B95D10-5D8A-4757-B32D-2652AD2F7A6D}
+		{0364E990-93F9-45A3-88B1-B22826AE1AFE} = {014DA8DA-6B03-430F-AD21-CC479F6EC163}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2D5DF13-302D-4B86-8527-E4137E73EBDD}
