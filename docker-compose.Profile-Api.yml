@@ -14,10 +14,7 @@ services:
      - dbdata:/var/lib/mysql
 
   profile.api:
-    image: ${DOCKER_REGISTRY-}profileapi
-    build:
-      context: .
-      dockerfile: Profile.Api/Dockerfile
+    image: mirzaevolution/mscprofileapi:latest
     depends_on:
      - profile.api.mysql
 
